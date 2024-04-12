@@ -18,32 +18,32 @@ const companiesData =[
     {
         name: "Saab AB",
         city: "Stockholm",
-        year: "1937"
+        year: 1937
     },
     {
         name: "Volvo Group", 
         city: "Göteborg", 
-        year: "1927"
+        year: 1927
     },
     {
         name: "Sandvik AB", 
         city: "Stockholm",
-        year: "1862"
+        year: 1862
     },
     {
         name: "Atlas Copco Group",
         city: "Nacka", 
-        year: "1873"
+        year: 1873
     },
     {
         name: "Electrolux AB",
         city: "Stockholm",
-        year: "1919"
+        year: 1919
     },
     {
         name: "Skanska AB",
         city: "Stockholm",
-        year: "1887"
+        year: 1887
     }
     
 ];
