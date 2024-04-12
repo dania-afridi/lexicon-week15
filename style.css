@@ -1,9 +1,42 @@
 body {
-    margin:0;
+    font-family: 'Courier New', Courier, monospace;
+    margin:36px auto;
     padding: 0;
+    background-color: bisque;
+}
+h1 {
+    text-align: center;
+    font-size: 46px;
+}
+button{
+    margin: 16px 3px;
+    padding: 10px 32px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color:burlywood;
+    border-radius: 16px;
 }
 #companies {
-    margin: 48px auto;
-    padding: 16px;
+    margin: 28px auto;
+    padding: 10px 26px;
+    text-align: right;
+    max-width: 600px;
+    background-color: lightcyan;
+    border-radius: 25px;
 }
-
+#companies-table {
+   border: darkred solid 5px;
+   margin: 0 auto;
+   padding-left: 32px;
+   border-radius: 32px;
+}
+td{
+    padding: 16px;
+    border: brown solid 2px;
+    margin: 0px;
+    text-align: left;
+    font-size: 18px;
+}
+#companies-table tr:first-child td {
+    font-weight: bold;
+  }

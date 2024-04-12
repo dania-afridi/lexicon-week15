@@ -1,13 +1,20 @@
 const companies = document.getElementById("companies");
+const table = document.getElementById("companies-table");
 const showCompanies = document.getElementById("show-companies");
 
 let dataShown = false;
 
+/*
 const table = document.createElement("div");
 table.setAttribute("id", "companies-table");
 companies.appendChild(table);
-
+*/
 const companiesData =[
+    {
+        name: "COMPANY NAME",
+        city: "CITY",
+        year: "STARTING YEAR"
+    },
     {
         name: "Saab AB",
         city: "Stockholm",
@@ -42,14 +49,16 @@ const companiesData =[
 ];
 const getComapnies = ()=> {
     const data = getCompaniesData();
+    if (dataShown){
     const companiesTable = getTable(data);
     table.appendChild(companiesTable);
+    }
 }
 
 const getCompaniesData = ()=> {
     if (dataShown === false){
         dataShown = true;
-        showCompanies.innerHTML = "Hide Companies";
+        showCompanies.innerHTML = "Hide Data";
         return companiesData
     } else {
         hideCompaniesData();
@@ -57,13 +66,15 @@ const getCompaniesData = ()=> {
 }
 
 const hideCompaniesData = ()=>{
-    showCompanies.innerHTML = "Show Companies";
+    showCompanies.innerHTML = "Show Data";
     table.innerHTML = "";
     dataShown = false;
 }
 
 const getTable = (companiesList)=>{
     const newTable = document.createElement("table");
+    const rowToAdd = document.createElement("tr");
+    
     companiesList.map((company)=>{
         const newRow = getRow(company);
         newTable.appendChild(newRow);
